@@ -1,6 +1,6 @@
 FROM pytorch/pytorch:2.1.0-cuda12.1-cudnn8-devel
 
-RUN apt-get update && apt-get install -y libgl1-mesa-glx libpci-dev curl nano psmisc zip git && apt-get --fix-broken install -y
+RUN apt-get update && apt-get install -y sudo libgl1-mesa-glx libpci-dev curl nano psmisc zip git && apt-get --fix-broken install -y
 
 RUN echo "keyboard-configuration keyboard-configuration/country-select select English (US)" | debconf-set-selections
 ENV ACCEPT_EULA=yes
