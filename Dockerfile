@@ -18,7 +18,6 @@ RUN pip install appdirs==1.4.4
 RUN pip install astunparse==1.6.3 
 RUN pip install async-timeout==4.0.2 
 RUN pip install asynctest==0.13.0 
-RUN pip install backpack-for-pytorch==1.5.2 
 RUN pip install cachetools==5.3.0 
 RUN pip install chardet==3.0.4 
 RUN pip install charset-normalizer==2.0.12 
