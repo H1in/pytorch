@@ -97,7 +97,6 @@ RUN pip install munch==4.0.0
 RUN pip install networkx==2.6.3
 RUN pip install nose==1.3.7
 RUN pip install numexpr==2.8.6
-RUN pip install numpy==1.21.6
 RUN pip install oauthlib==3.2.2
 RUN pip install ogb==1.3.6
 RUN pip install omegaconf==2.3.0
