@@ -124,7 +124,6 @@ RUN pip install py3nvml==0.2.7
 RUN pip install pyasn1==0.5.0
 RUN pip install pyasn1-modules==0.3.0
 RUN pip install pycocotools==2.0.6
-RUN pip install pycryptodome==3.18.0
 RUN pip install pydeprecate==0.3.1
 RUN pip install 
 RUN pip install pygments==2.15.1
