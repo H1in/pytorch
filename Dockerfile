@@ -88,7 +88,6 @@ RUN pip install medpy==0.4.0
 RUN pip install mizani==0.7.3
 RUN pip install ml-collections==0.1.1
 RUN pip install mmcls==0.25.0
-RUN pip install mmcv-full==1.7.1
 RUN pip install mmdet==3.0.0
 RUN pip install mmengine==0.7.3
 RUN pip install mock==5.1.0
