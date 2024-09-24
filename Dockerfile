@@ -59,7 +59,6 @@ RUN pip install googleapis-common-protos==1.62.0
 RUN pip install gputil==1.4.0
 RUN pip install grad-cam==1.4.8
 RUN pip install grpcio==1.54.0
-RUN pip install h5py==3.7.0
 RUN pip install huggingface-hub==0.16.4
 RUN pip install hydra-core==1.3.2
 RUN pip install idna==2.10
