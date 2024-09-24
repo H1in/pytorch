@@ -83,7 +83,6 @@ RUN pip install lmdb==1.4.1
 RUN pip install markdown==3.4.3
 RUN pip install markdown-it-py==2.2.0
 RUN pip install markupsafe==2.1.5
-RUN pip install matplotlib==4.35.2
 RUN pip install mdurl==0.1.2
 RUN pip install medpy==0.4.0
 RUN pip install mizani==0.7.3
