@@ -4,8 +4,9 @@ RUN apt-get update && apt-get install -y libgl1-mesa-glx libpci-dev curl nano ps
 
 RUN conda install -y scikit-learn pandas flake8 yapf isort yacs future libgcc
 
-RUN pip install --upgrade pip && python -m pip install --upgrade setuptools && \
-    pip install absl-py==1.4.0 addict==2.4.0 aiohttp==3.8.4 aiosignal==1.3.1 aliyun-python-sdk-core==2.13.36 aliyun-python-sdk-kms==2.16.1 antlr4-python3-runtime==4.9.3 appdirs==1.4.4 astunparse==1.6.3 async-timeout==4.0.2 asynctest==0.13.0 backpack-for-pytorch==1.5.2 cachetools==5.3.0 chardet==3.0.4 charset-normalizer==2.0.12 click==8.1.3 colorama==0.4.6 contextlib2==21.6.0 cox==0.1.post3 crcmod==1.7 cryptography==41.0.1 cycler==0.11.0 
+RUN pip install --upgrade pip && python -m pip install --upgrade setuptools
+
+RUN pip install absl-py==1.4.0 addict==2.4.0 aiohttp==3.8.4 aiosignal==1.3.1 aliyun-python-sdk-core==2.13.36 aliyun-python-sdk-kms==2.16.1 antlr4-python3-runtime==4.9.3 appdirs==1.4.4 astunparse==1.6.3 async-timeout==4.0.2 asynctest==0.13.0 backpack-for-pytorch==1.5.2 cachetools==5.3.0 chardet==3.0.4 charset-normalizer==2.0.12 click==8.1.3 colorama==0.4.6 contextlib2==21.6.0 cox==0.1.post3 crcmod==1.7 cryptography==41.0.1 cycler==0.11.0 
 
 RUN pip install cython==3.0.2 descartes==1.1.0 dill==0.3.7 docker-pycreds==0.4.0 einops==0.6.1 et-xmlfile==1.1.0 filelock==3.8.2 flatbuffers==23.5.26 fonttools==4.38.0 frozenlist==1.3.3 fsspec==2023.1.0 ftfy==6.1.1 future==0.18.3 fvcore==0.1.5.post20221221 gast==0.4.0 gdown==4.7.1 geotorch==0.3.0 gitdb==4.0.10 gitpython==3.1.31 google-auth==2.17.3 google-auth-oauthlib==0.4.6 google-pasta==0.2.0 googleapis-common-protos==1.62.0 
 
