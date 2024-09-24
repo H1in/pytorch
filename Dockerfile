@@ -109,7 +109,6 @@ RUN pip install opt-einsum==3.3.0
 RUN pip install ordered-set==4.1.0
 RUN pip install oss2==2.17.0
 RUN pip install palettable==3.3.3
-RUN pip install pandas==1.1.5
 RUN pip install pathtools==0.1.2
 RUN pip install patsy==0.5.3
 RUN pip install pillow==9.3.0
