@@ -124,7 +124,6 @@ RUN pip install py3nvml==0.2.7
 RUN pip install pyasn1==0.5.0
 RUN pip install pyasn1-modules==0.3.0
 RUN pip install pycocotools==2.0.6
-RUN pip install pysocks==1.7.1
 RUN pip install pytz==2023.3
 RUN pip install pywavelets==1.3.0
 RUN pip install pyyaml==6.0
