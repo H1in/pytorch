@@ -6,20 +6,34 @@ RUN conda install -y scikit-learn pandas flake8 yapf isort yacs future libgcc
 
 RUN pip install --upgrade pip && python -m pip install --upgrade setuptools
 
-RUN pip install absl-py==1.4.0 addict==2.4.0 aiohttp==3.8.4 aiosignal==1.3.1 aliyun-python-sdk-core==2.13.36 aliyun-python-sdk-kms==2.16.1 antlr4-python3-runtime==4.9.3 
+RUN pip install absl-py==1.4.0 
+RUN pip install addict==2.4.0 
+RUN pip install aiohttp==3.8.4 
+RUN pip install aiosignal==1.3.1 
+RUN pip install aliyun-python-sdk-core==2.13.36 
+RUN pip install aliyun-python-sdk-kms==2.16.1 
+RUN pip install antlr4-python3-runtime==4.9.3 
+
 RUN pip install appdirs==1.4.4 astunparse==1.6.3 async-timeout==4.0.2 asynctest==0.13.0 backpack-for-pytorch==1.5.2 cachetools==5.3.0 chardet==3.0.4 charset-normalizer==2.0.12 
+
 RUN pip install click==8.1.3 colorama==0.4.6 contextlib2==21.6.0 cox==0.1.post3 crcmod==1.7 cryptography==41.0.1 cycler==0.11.0 
 
 RUN pip install cython==3.0.2 descartes==1.1.0 dill==0.3.7 docker-pycreds==0.4.0 einops==0.6.1 et-xmlfile==1.1.0 filelock==3.8.2 flatbuffers==23.5.26 fonttools==4.38.0 frozenlist==1.3.3 
+
 RUN pip install fsspec==2023.1.0 ftfy==6.1.1 future==0.18.3 fvcore==0.1.5.post20221221 gast==0.4.0 gdown==4.7.1 geotorch==0.3.0 gitdb==4.0.10 gitpython==3.1.31 google-auth==2.17.3 
+
 RUN pip install google-auth-oauthlib==0.4.6 google-pasta==0.2.0 googleapis-common-protos==1.62.0 
 
 RUN pip install gputil==1.4.0 grad-cam==1.4.8 grpcio==1.54.0 h5py==3.7.0 huggingface-hub==0.16.4 hydra-core==1.3.2 idna==2.10 imageio==2.31.1 iopath==0.1.8 ipywidgets==8.0.6 
+
 RUN pip install jinja2==2.11.3 jmespath==0.10.0 joblib==1.2.0 jsonpatch==1.32 jsonpointer==2.3 jupyter==1.0.0 jupyter-console==6.6.3 jupyter-core==4.12.0 jupyterlab-widgets==3.0.7 
+
 RUN pip install keras==2.11.0 kiwisolver==1.4.4 libclang==16.0.6 lightning-utilities==0.9.0 littleutils==0.2.2 lmdb==1.4.1 
 
 RUN pip install markdown==3.4.3 markdown-it-py==2.2.0 markupsafe==2.1.5 matplotlib==4.35.2 mdurl==0.1.2 medpy==0.4.0 mizani==0.7.3 ml-collections==0.1.1 mmcls==0.25.0 mmcv-full==1.7.1 
+
 RUN pip install mmdet==3.0.0 mmengine==0.7.3 mock==5.1.0 model-index==0.1.11 multidict==6.0.4 munch==4.0.0 networkx==2.6.3 nose==1.3.7 numexpr==2.8.6 numpy==1.21.6 oauthlib==3.2.2 ogb==1.3.6 
+
 RUN pip install omegaconf==2.3.0 open-clip-torch==2.7.0 opendatalab==0.0.10 openmim==0.3.9 
 
 RUN pip install openpyxl==3.1.2 opt-einsum==3.3.0 ordered-set==4.1.0 oss2==2.17.0 palettable==3.3.3 pandas==1.1.5 pathtools==0.1.2 patsy==0.5.3 pillow==9.3.0 pip==24.0 plotnine==0.8.0 portalocker==2.7.0 pretrainedmodels==0.7.4 prettytable==3.7.0 promise==2.3 prompt-toolkit==3.0.38 protobuf==3.19.6 py3nvml==0.2.7 pyasn1==0.5.0 pyasn1-modules==0.3.0 pycocotools==2.0.6 pycryptodome==3.18.0 pydeprecate==0.3.1 
