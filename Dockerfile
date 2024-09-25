@@ -3,9 +3,6 @@ FROM pytorch/pytorch:2.1.0-cuda12.1-cudnn8-devel
 # Install system dependencies
 RUN apt-get update && apt-get install -y libgl1-mesa-glx libpci-dev curl nano psmisc zip git && apt-get --fix-broken install -y
 
-# Install Python 3.8 using Conda
-RUN conda install -y python=3.8
-
 # Update Conda
 RUN conda update -n base -c defaults conda
 
