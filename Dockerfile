@@ -124,7 +124,6 @@ RUN pip install py3nvml==0.2.7
 RUN pip install pyasn1==0.5.0
 RUN pip install pyasn1-modules==0.3.0
 RUN pip install pycocotools==2.0.6
-RUN pip install rich==13.3.5
 RUN pip install robustness==1.2.1.post2
 RUN pip install rsa==4.9
 RUN pip install ruamel-yaml==0.18.5
