@@ -1,12 +1,35 @@
 FROM pytorch/pytorch:2.1.0-cuda12.1-cudnn8-devel
 
+# Install system dependencies
 RUN apt-get update && apt-get install -y libgl1-mesa-glx libpci-dev curl nano psmisc zip git && apt-get --fix-broken install -y
 
-RUN conda install -y scikit-learn pandas flake8 yapf isort yacs future libgcc
+# Install Python 3.8 using Conda
+RUN conda install -y python=3.8
 
-RUN apt-get update && apt-get install -y python3-pip python3-distutils
+# Update Conda
+RUN conda update -n base -c defaults conda
 
-RUN pip install --upgrade pip && python -m pip install --upgrade setuptools && \
-    pip install cython scipy shapely timm scikit-image numpy==1.23.1 setuptools==59.5.0 matplotlib==3.3.4 pillow==9.1.0 shapely==1.8.0 open-clip-torch einops resampy soundfile easydict
+# Install PyTorch and related packages using Conda
+RUN conda install pytorch==2.0.0 torchvision==0.15.0 torchaudio==2.0.0 pytorch-cuda=11.7 -c pytorch -c nvidia
 
-COPY ./fonts/* /opt/conda/lib/python3.10/site-packages/matplotlib/mpl-data/fonts/ttf/
+# Install pip packages
+RUN pip install --upgrade pip && \
+    pip install torchvision \
+                tqdm \
+                ftfy \
+                regex \
+                diffusers==0.24.0 \
+                accelerate==0.24.1 \
+                transformers==4.35.2 \
+                matplotlib==3.7.3 \
+                openai==1.3.0 \
+                nltk==3.8.1 \
+                gpustat==1.1.1 \
+                sentence-transformers
+
+# Copy fonts (if you still need this)
+COPY ./fonts/* /opt/conda/lib/python3.8/site-packages/matplotlib/mpl-data/fonts/ttf/
+
+# Set Python 3.8 as the default Python version
+RUN echo "alias python=python3.8" >> ~/.bashrc
+RUN echo "alias pip=pip3" >> ~/.bashrc
