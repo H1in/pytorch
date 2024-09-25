@@ -124,7 +124,6 @@ RUN pip install py3nvml==0.2.7
 RUN pip install pyasn1==0.5.0
 RUN pip install pyasn1-modules==0.3.0
 RUN pip install pycocotools==2.0.6
-RUN pip install regex==2022.10.31
 RUN pip install requests==2.28.2
 RUN pip install requests-oauthlib==1.3.1
 RUN pip install rich==13.3.5
